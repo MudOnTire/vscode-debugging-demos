@@ -6,17 +6,16 @@
   "configurations": [    
     {
       "type": "chrome",
-      "request": "attach",
-      "name": "attach chrome",
-      "port": 9222,
+      "request": "launch",
+      "name": "launch chrome",
       "url": "http://localhost:4000",
       "webRoot": "${workspaceFolder}/public"
     },
     {
       "type": "chrome",
-      "request": "launch",
-      "name": "launch chrome",
-      "url": "http://localhost:4000",
+      "request": "attach",
+      "name": "attach chrome",
+      "port": 9222,
       "webRoot": "${workspaceFolder}/public"
     }
   ]
