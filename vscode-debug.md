@@ -67,3 +67,28 @@
 
 # 前后端在同一工程中
 
+**launch.json**
+
+```
+{
+  "version": "0.2.0",
+  "configurations": [  
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "attach chrome",
+      "port": 9222,
+      "url": "http://localhost:4000",
+      "webRoot": "${workspaceFolder}/public"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "launch chrome",
+      "url": "http://localhost:4000",
+      "webRoot": "${workspaceFolder}/public"
+    }
+  ]
+}
+```
+

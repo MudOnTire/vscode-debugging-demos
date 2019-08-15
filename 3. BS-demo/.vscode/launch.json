@@ -18,33 +18,6 @@
       "name": "launch chrome",
       "url": "http://localhost:4000",
       "webRoot": "${workspaceFolder}/public"
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "launch server",
-      "program": "${workspaceFolder}/index.js"
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "launch nodemon",
-      "runtimeExecutable": "nodemon",
-      "program": "${workspaceFolder}/index.js",
-      "restart": true,
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "launch via NPM",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": [
-        "run-script",
-        "debug"
-      ],
-      "port": 5858
-    },
+    }
   ]
 }
