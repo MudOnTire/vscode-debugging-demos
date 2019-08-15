@@ -133,3 +133,32 @@
 3. launch：需要先关闭所有的chrome进程，再启动调试
 4. 一般使用launch
 
+# 5. ant-design-pro调试
+
+**launch.json**
+
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:8000",
+      "sourceMaps": true,
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
+```
+
+# 6. vue-cli调试
+

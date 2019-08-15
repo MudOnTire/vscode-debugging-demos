@@ -13,7 +13,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "debug": "cross-env NODE_ENV=development nodemon --inspect-brk=5858 index.js",
+    "debug": "cross-env NODE_ENV=development node --inspect-brk=5858 index.js",
     "start:debug": "cross-env DEBUG=express-mongoose-es6-rest-api:* yarn start",
     "lint": "esw *.js server config --color",
     "lint:watch": "yarn lint -- --watch",
