@@ -1,4 +1,4 @@
-# 单独的 JS 文件
+# 1. 单独的 JS 文件
 
 ```
 {
@@ -22,17 +22,19 @@
 }
 ```
 
-# Node服务
+# 2. Node服务
 
 **launch.json**
 
 ```
+// 直接运行入口文件进行调试
 {
   "type": "node",
   "request": "launch",
   "name": "launch server",
   "program": "${workspaceFolder}/index.js"
 },
+// 使用nodemon运行入口文件进行调试，支持实时修改编译
 {
   "type": "node",
   "request": "launch",
@@ -43,6 +45,7 @@
   "console": "integratedTerminal",
   "internalConsoleOptions": "neverOpen"
 },
+// 使用npm运行script
 {
   "type": "node",
   "request": "launch",
@@ -65,7 +68,7 @@
 }
 ```
 
-# 前后端在同一工程中
+# 3. 前后端在同一工程中
 
 **launch.json**
 
@@ -91,4 +94,42 @@
   ]
 }
 ```
+
+1. 先运行node服务
+2. attach：需要先打开网页到 http://localhost:4000，再启动调试
+3. launch：需要先关闭所有的chrome进程，再启动调试
+4. 一般使用launch
+
+
+# 4. create-react-app调试
+
+**launch.json**
+
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
+```
+
+1. 先运行node服务
+2. attach：需要先打开网页到 http://localhost:4000，再启动调试
+3. launch：需要先关闭所有的chrome进程，再启动调试
+4. 一般使用launch
 

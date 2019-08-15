@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "debug": "nodemon --inspect-brk=5858 index.js",
+    "debug": "nodemon --inspect index.js",
     "start": "nodemon index.js"
   },
   "dependencies": {
