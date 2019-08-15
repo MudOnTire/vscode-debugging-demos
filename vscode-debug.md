@@ -94,6 +94,7 @@
   ]
 }
 ```
+**注意点：**
 
 1. 先运行node服务
 2. attach：需要先打开网页到 http://localhost:4000，再启动调试
@@ -125,6 +126,8 @@
   ]
 }
 ```
+
+**注意点：**
 
 1. 先运行node服务
 2. attach：需要先打开网页到 http://localhost:4000，再启动调试
@@ -159,5 +162,37 @@
 
 # 6. vue-cli调试
 
-参考：https://cn.vuejs.org/v2/cookbook/debugging-in-vscode.html
+参考：https://cn.vuejs.org/v2/cookbook/debugging-in-vscode.html，亲测不好用
 
+**launch.json**
+
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}/src"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "launch chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/src",
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./src/*": "${webRoot}/*"
+      }
+    }
+  ]
+}
+```
+
+**注意点：**
+
+1. launch：经测试不好用
+2. attach：可以使用
