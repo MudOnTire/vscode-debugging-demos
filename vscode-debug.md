@@ -98,8 +98,6 @@
 1. 先运行node服务
 2. attach：需要先打开网页到 http://localhost:4000，再启动调试
 3. launch：需要先关闭所有的chrome进程，再启动调试
-4. 一般使用launch
-
 
 # 4. create-react-app调试
 
@@ -131,7 +129,6 @@
 1. 先运行node服务
 2. attach：需要先打开网页到 http://localhost:4000，再启动调试
 3. launch：需要先关闭所有的chrome进程，再启动调试
-4. 一般使用launch
 
 # 5. ant-design-pro调试
 
@@ -161,4 +158,6 @@
 ```
 
 # 6. vue-cli调试
+
+参考：https://cn.vuejs.org/v2/cookbook/debugging-in-vscode.html
 
