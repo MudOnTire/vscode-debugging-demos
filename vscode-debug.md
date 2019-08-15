@@ -24,6 +24,8 @@
 
 # Node服务
 
+**launch.json**
+
 ```
 {
   "type": "node",
@@ -53,3 +55,15 @@
   "port": 5858
 }
 ```
+
+**package.json**
+
+```
+"scripts:{
+  ...
+  "debug": "cross-env NODE_ENV=development nodemon --inspect-brk=5858 index.js",
+}
+```
+
+# 前后端在同一工程中
+
