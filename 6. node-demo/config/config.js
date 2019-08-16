@@ -49,10 +49,10 @@ const config = {
     str: mongo_str
   },
   upyun: {
-    serverPrefix: 'https://image.cnuip.com',
-    bucketName: 'bucket-cnuip',
-    operator: 'cnuipadmin',
-    password: 'CA2203!A',
+    serverPrefix: '',
+    bucketName: '',
+    operator: '',
+    password: '',
     maxFieldsSize: 100 * 1024 * 1024
   }
 };
