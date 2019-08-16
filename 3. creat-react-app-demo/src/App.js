@@ -8,8 +8,6 @@ function App() {
     alert('Just Learn');
   }
 
-  console.log('haha');
-
   return (
     <div className="App">
       <header className="App-header">
