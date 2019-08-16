@@ -146,21 +146,11 @@ module.exports = {
       "request": "launch",
       "name": "launch chrome",
       "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}/src",
-      "breakOnLoad": true,
-      "sourceMapPathOverrides": {
-        "webpack:///./src/*": "${webRoot}/*"
-      }
+      "webRoot": "${workspaceFolder}/src"
     }
   ]
 }
 ```
-
-**注意点：**
-
-1. launch：经测试不好用
-2. attach：可以使用
-
 
 # Node服务
 
